@@ -98,3 +98,17 @@ button:hover{
   box-shadow:0 10px 30px rgba(0,0,0,0.3);
   margin-bottom:20px;
 }
+.letter{
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+}
+html{
+  scroll-behavior: smooth;
+}
