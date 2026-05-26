@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  overflow:hidden;
+  background:linear-gradient(to bottom,#ffd6e7,#fff0f5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Tombol awal */
+.start-screen{
+  position:absolute;
+  z-index:10;
+}
+
+button{
+  padding:15px 40px;
+  border:none;
+  border-radius:30px;
+  background:white;
+  color:#ff4f81;
+  font-size:20px;
+  cursor:pointer;
+  box-shadow:0 0 15px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.1);
+}
+
+/* Surat */
+.letter{
+  width:80%;
+  max-width:500px;
+  background:rgba(255,255,255,0.8);
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+  backdrop-filter:blur(10px);
+  animation:fade 1s ease;
+}
+
+.letter h1{
+  color:#ff4f81;
+  margin-bottom:20px;
+}
+
+.letter p{
+  color:#444;
+  line-height:1.8;
+  margin-bottom:15px;
+}
+
+.hidden{
+  display:none;
+}
+
+@keyframes fade{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Bunga jatuh */
+.flower{
+  position:absolute;
+  top:-50px;
+  color:pink;
+  animation:fall linear forwards;
+}
+
+@keyframes fall{
+  to{
+    transform:translateY(110vh) rotate(360deg);
+    opacity:0;
+  }
+}
