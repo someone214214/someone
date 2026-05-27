@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>LIAAAA</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Musik -->
-  <audio id="music" autoplay loop>
+  <audio id="music" loop>
     <source src="music.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Bunga -->
-  <div class="flowers"></div>
-
-  <!-- Awal -->
+  <!-- Halaman awal -->
   <div class="start-screen" id="start">
-    <button onclick="openLetter()">PENCET 💌</button>
-  </div>
 
-  <!-- Surat -->
-  <div class="letter hidden" id="letter">
-    
-  </div>
-
-</div>
-
-
-    
-    <img src="foto.jpg" class="photo">
-
-    <h1>Hai LIAAAAA 🌸</h1>
-
-    <p>
-      LIAA KIW KIWWWW, HEHEHE LIAA IPUL MAU MINTA MAAFF LEWAT INI HIHI.
-    </p>
-
-    <p>
-      Ipul cuma mau minta maaf buat semua kejadian kemarin.
-      Mungkin cara ipul, sikap ipul,
-      atau kata-kata ipul bikin lia kecewa dan kepikiran.
-      Jujur ipul nyesel banget kalau akhirnya hubungan kita jadi renggang gara-gara gini.
-    </p>
-
-    <p>
-      Mungkin ga langsung bikin semuanya balik kaya dulu,
-      tapi ipul beneran tulus minta maaf.
-      Semoga lia bisa pelan-pelan maafin ipull yahh.
-      Ipul juga bakal coba jadi lebih baik lagi kedepannya.
-      Makasih udah pernah ada dan sabar sejauh ini.
-    </p>
-
-    <p>
-      Semoga lia seneng dan maafin ipull hehehe.
-      <br><br>
-      Berang berang liat kayuu <br>
-      Aduh neng lia pokonya ayapyuu 💖
-    </p>
+    <button onclick="openLetter()">
+      PENCET 💌
+    </button>
 
   </div>
-  
-  <!-- Lirik Lagu -->
-<div class="lyrics-box">
 
-  <div class="song-title">
-    🎵Photograph-ed sheeran
-  </div>
+  <!-- Isi -->
+  <div class="container hidden" id="content">
 
-  <div class="lyric">
-    It is the only thing that makes us feel alive <br>
-    We keep this love in a photograph <br>
-    We made these memories for ourselves <br>
-    Where our eyes are never closing  <br>
-    Hearts are never broken  <br>
-    And time's forever frozen, still <br>
-    So you can keep me   <br>
-    Inside the pocket of your ripped jeans   <br>
-    Holding me closer 'til our eyes meet  <br>
-    You won't ever be alone, wait for me to come home....
+    <!-- Surat -->
+    <div class="letter">
 
-    
+      <img src="foto.jpg" class="photo">
+
+      <h1>Hai LIAAAAA 🌸</h1>
+
+      <p>
+        LIAA KIW KIWWWW, HEHEHE LIAA IPUL MAU MINTA MAAFF LEWAT INI HIHI.
+      </p>
+
+      <p>
+        Ipul cuma mau minta maaf buat semua kejadian kemarin.
+        Mungkin cara ipul, sikap ipul,
+        atau kata-kata ipul bikin lia kecewa dan kepikiran.
+      </p>
+
+      <p>
+        Jujur ipul nyesel banget kalau akhirnya hubungan kita jadi renggang gara-gara gini.
+      </p>
+
+      <p>
+        Mungkin ga langsung bikin semuanya balik kaya dulu,
+        tapi ipul beneran tulus minta maaf.
+      </p>
+
+      <p>
+        Semoga lia bisa pelan-pelan maafin ipull yahh 💖
+      </p>
+
+      <p>
+        Berang berang liat kayuu <br>
+        Aduh neng lia pokonya ayapyuu 💕
+      </p>
+
+    </div>
+
+    <!-- Lirik lagu -->
+    <div class="lyrics-box">
+
+      <div class="song-title">
+        🎵 Photograph - Ed Sheeran
+      </div>
+
+      <div class="lyric">
+        We keep this love in a photograph...
+      </div>
+
+      <div class="lyric">
+        Hearts are never broken...
+      </div>
+
+      <div class="lyric">
+        Time's forever frozen still...
+      </div>
+
+      <div class="lyric">
+        You won't ever be alone...
+      </div>
+
+    </div>
+
   </div>
 
   <script src="script.js"></script>
