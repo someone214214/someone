@@ -184,3 +184,26 @@ body{
   }
 
 }
+/* Bunga jatuh */
+.flower{
+  position:fixed;
+  top:-50px;
+
+  pointer-events:none;
+
+  animation:fall linear forwards;
+
+  z-index:999;
+}
+
+@keyframes fall{
+
+  to{
+    transform:
+      translateY(110vh)
+      rotate(360deg);
+
+    opacity:0;
+  }
+
+}
