@@ -112,3 +112,122 @@ button:hover{
 html{
   scroll-behavior: smooth;
 }
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #2b0018,
+    #4a0028,
+    #69003a
+  );
+
+  color: white;
+}
+
+/* Awal */
+.start-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-screen button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #ff4f9a;
+  color: white;
+  box-shadow: 0 0 20px #ff4f9a;
+}
+
+/* Surat */
+.letter {
+  width: 80%;
+  max-width: 700px;
+  margin: 80px auto;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Foto */
+.photo {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Lirik lagu */
+.lyrics-box {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+}
+
+/* Judul lagu */
+.song-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #ff9fc8;
+}
+
+/* Animasi lirik */
+.lyric {
+  font-size: 16px;
+  line-height: 1.8;
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
