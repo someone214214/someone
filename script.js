@@ -24,3 +24,10 @@ function createFlower(){
 }
 
 setInterval(createFlower,300);
+
+function openLetter() {
+  document.getElementById("start").style.display = "none";
+  document.getElementById("letter").classList.remove("hidden");
+
+  document.getElementById("music").play();
+}
