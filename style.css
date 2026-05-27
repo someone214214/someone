@@ -5,6 +5,10 @@
   font-family:Arial,sans-serif;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   background:linear-gradient(
     135deg,
@@ -17,7 +21,7 @@ body{
   overflow-x:hidden;
 }
 
-/* Halaman awal */
+/* Tombol awal */
 .start-screen{
   width:100%;
   height:100vh;
@@ -29,6 +33,7 @@ body{
 
 .start-screen button{
   padding:15px 35px;
+
   border:none;
   border-radius:20px;
 
@@ -101,7 +106,7 @@ body{
   margin-bottom:15px;
 }
 
-/* Lirik */
+/* Box lagu */
 .lyrics-box{
   width:260px;
 
@@ -120,17 +125,7 @@ body{
 /* Judul lagu */
 .song-title{
   font-size:20px;
-  margin-bottom:20px;
-
   color:#ffb6d9;
-}
-
-/* Lirik */
-.lyric{
-  margin-bottom:15px;
-  line-height:1.7;
-
-  animation:blink 4s infinite;
 }
 
 /* Animasi masuk */
@@ -147,43 +142,6 @@ body{
   }
 }
 
-/* Animasi lirik */
-@keyframes blink{
-
-  0%{
-    opacity:0;
-    transform:translateY(10px);
-  }
-
-  50%{
-    opacity:1;
-    transform:translateY(0);
-  }
-
-  100%{
-    opacity:0;
-    transform:translateY(-10px);
-  }
-}
-
-/* HP */
-@media(max-width:768px){
-
-  .container{
-    flex-direction:column;
-    align-items:center;
-    padding:20px;
-  }
-
-  .letter{
-    width:100%;
-  }
-
-  .lyrics-box{
-    width:100%;
-  }
-
-}
 /* Bunga jatuh */
 .flower{
   position:fixed;
@@ -204,6 +162,25 @@ body{
       rotate(360deg);
 
     opacity:0;
+  }
+
+}
+
+/* HP */
+@media(max-width:768px){
+
+  .container{
+    flex-direction:column;
+    align-items:center;
+    padding:20px;
+  }
+
+  .letter{
+    width:100%;
+  }
+
+  .lyrics-box{
+    width:100%;
   }
 
 }
