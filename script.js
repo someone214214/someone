@@ -1,6 +1,6 @@
 function openLetter(){
 
-  // Hilangin halaman awal
+  // Hilangin tombol awal
   document.getElementById("start").style.display = "none";
 
   // Tampilkan isi
@@ -44,3 +44,13 @@ function createFlower(){
 }
 
 setInterval(createFlower,300);
+
+/* Auto scroll */
+setInterval(() => {
+
+  window.scrollBy({
+    top:1,
+    behavior:"smooth"
+  });
+
+},40);
